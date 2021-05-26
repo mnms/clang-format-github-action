@@ -1,9 +1,4 @@
-FROM silkeh/clang:10
-
-LABEL maintainer="RafikFarhad<rafikfarhad@gmail.com>"
-
+FROM 192.168.201.13:5000/clang:12
 COPY entrypoint.sh /entrypoint.sh
-
 RUN chmod +x /entrypoint.sh
-
 ENTRYPOINT ["/entrypoint.sh"]
