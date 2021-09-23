@@ -27,6 +27,7 @@ SOURCES=()
 PROBLEMETIC_FILES=()
 EXIT_STATUS=0
 STYLE="-style=file"
+shopt -s globstar
 
 function resolve_inputs() {
     INPUT_STYLE=${INPUT_STYLE:-"file"}
